@@ -3,20 +3,20 @@
   "description": "Set video as the background of your website. Fallbacks to the image, when required.",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "dist/vidage.js",
+  "main": "dist/Vidage.js",
   "files": [
     "src",
     "dist"
   ],
-  "homepage": "https://github.com/dvlden/vidage#readme",
-  "bugs": "https://github.com/dvlden/vidage/issues",
+  "homepage": "https://github.com/postmodem-agency/vidage#readme",
+  "bugs": "https://github.com/postmodem-agency/vidage/issues",
   "scripts": {
     "dev": "rollup -c -w -m inline --environment MODE:dev",
     "build": "rollup -c --environment MODE:production"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dvlden/vidage.git"
+    "url": "https://github.com/postmodem-agency/vidage.git"
   },
   "author": {
     "name": "Nenad Novaković",

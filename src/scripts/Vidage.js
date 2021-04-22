@@ -1,4 +1,4 @@
-import '../styles/vidage.scss'
+import '../styles/Vidage.scss'
 
 import debounce from 'debounce'
 import defaults from './helpers/defaults'
@@ -32,24 +32,10 @@ export default class Vidage {
 
   handler () {
     const body = document.body
-
-    if (detectTouchOrSmallScreen()) {
-      this.element.pause()
-
-      if (this.options.videoRemoval) {
-        removeVideo(this.element)
-      }
-
-      body.classList.remove(this.options.helperClass)
+    if (this.options.videoRemoval) {
+      restoreVideo(this.element)
     }
-    else {
-      if (this.options.videoRemoval) {
-        restoreVideo(this.element)
-      }
-
-      this.element.play()
-
-      body.classList.add(this.options.helperClass)
-    }
+    this.element.play()
+    body.classList.add(this.options.helperClass)
   }
 }

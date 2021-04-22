@@ -21,7 +21,7 @@ const helpers = {
 }
 
 export default {
-  input: 'src/scripts/vidage.js',
+  input: 'src/scripts/Vidage.js',
 
   plugins: [
     postcss({
